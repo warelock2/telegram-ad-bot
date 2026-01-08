@@ -1,0 +1,5 @@
+# Telegram Bot Framework
+python-telegram-bot==21.0.1
+
+# For loading .env file variables into the environment (used by config.py)
+python-dotenv==1.0.1

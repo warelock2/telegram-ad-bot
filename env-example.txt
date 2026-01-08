@@ -1,0 +1,50 @@
+# -------------------------
+# CORE CREDENTIALS
+# -------------------------
+# The secret API token you get from @BotFather on Telegram.
+BOT_TOKEN=
+
+# -------------------------
+# TARGET & CONTENT
+# -------------------------
+# The unique identifier for the group/channel to post in (e.g., "@channelname" or a negative number like -100123456789).
+TELEGRAM_CHAT_ID=
+
+# The name of the folder where ad files are stored.
+ADS_DIRECTORY=ads
+
+# The configurable "sponsored" message to append to each ad post.
+AUTH_TEXT="This ad is sponsored and approved by the admins of this group/channel."
+
+# -------------------------
+# SCHEDULING & THROTTLING
+# -------------------------
+# The primary time interval between posts, in hours.
+TIME_BASED_FREQUENCY_HOURS=12
+
+# The random amount of time (in minutes) to add or subtract from the main frequency to make the bot less robotic.
+RANDOMIZATION_JITTER_MINUTES=30
+
+# The cooldown period (in minutes) after a successful ad post before the bot considers posting again.
+POST_SUCCESS_COOLDOWN_MINUTES=30.0
+
+# A simple true or false to turn the "post only when active" feature on or off.
+ACTIVITY_CHECK_ENABLED=true
+
+# The minimum number of messages required to consider the group "active."
+ACTIVITY_CHECK_MESSAGES=10
+
+# The time window (in minutes) to look back through for the message count.
+ACTIVITY_CHECK_TIMEFRAME_MINUTES=60
+
+# If the activity check fails, how long (in minutes) to wait before trying to post again.
+ACTIVITY_CHECK_RETRY_DELAY_MINUTES=30
+
+# -------------------------
+# OPERATIONAL CONTROL
+# -------------------------
+# Controls how much detail the bot logs. Options: DEBUG, INFO, WARNING, ERROR
+LOG_LEVEL=DEBUG
+
+# When set to true, the bot will log what it would have sent instead of actually sending it to Telegram. Perfect for testing.
+DRY_RUN=false

@@ -1,0 +1,16 @@
+services:
+  bot:
+    build:
+      context: ./bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      # Mount the configuration directory for runtime access to repolist.txt
+      - ./conf:/app/conf
+      # Mount a volume for persistent data (e.g., SQLite DB)
+      - ./data:/app/data
+      # Mount a volume for persistent logs
+      - ./logs:/app/logs
+      # Mount the ads directory so it can be updated without rebuilding the image
+      - ./ads:/app/ads
